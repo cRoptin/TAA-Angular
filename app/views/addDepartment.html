@@ -1,0 +1,7 @@
+<div>
+  Add a department
+  <form name="form" ng-submit="addDepartment(name)" novalidate>
+    <span>Name : </span><input ng-model="name" required/>
+    <input type="submit" ng-disabled="form.$invalid"/>
+  </form>
+</div>
