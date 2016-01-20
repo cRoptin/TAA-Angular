@@ -4,7 +4,7 @@ angular.module('webappApp')
     getDepartment($http,$scope);
 });
 function getDepartment($http,$scope){
-  $http.get(urlRest+"rest/department").success(function(response) {
+  $http.get("http://localhos:8081/department").success(function(response) {
           $scope.developpers = response;
   });
  }
